@@ -1,7 +1,9 @@
 package com.simplilearn.seleniumtest;
 
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class LauchChromeTest {
 public static void main(String[] args) {
@@ -16,12 +18,10 @@ public static void main(String[] args) {
 		// step3: instantiate selenium webdriver
 		WebDriver driver = new ChromeDriver();
 		
-		// step4: launch browser
+		
 		driver.get(siteUrl);
 		
-		// step5 : Evaluate the Test
 		
-		// step6: Close browser
 		driver.close();
 	}
 

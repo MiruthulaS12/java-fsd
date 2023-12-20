@@ -1,8 +1,10 @@
-package com.simplilearn.seleniumtest;
+package com.simplilearn.seleniumtest.google;
+
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 
@@ -23,11 +25,9 @@ public class GoogleSearchTest {
 		
 		driver.get(siteUrl);
 		
-		
 		WebElement searchBox = driver.findElement(By.name("q"));
 		searchBox.sendKeys("selenium documentation");
 		searchBox.submit();
-		
 		
 		Thread.sleep(2000);
 		
@@ -43,10 +43,12 @@ public class GoogleSearchTest {
 		System.out.println("Expected Title : " + expectedTitle);
 		System.out.println("Actual Title : " + actualTitle);
 		
-		
+		// step5: close driver
 		driver.close();
 		
 		
 	}
-}
+
+	}
+
 
